@@ -1,0 +1,28 @@
+{
+	"env": {
+		"browser": false,
+		"es2021": true,
+		"node": true
+	},
+	"extends": ["plugin:react/recommended", "plugin:react-hooks/recommended", "standard", "prettier"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"rules": {
+		"no-unused-vars": "warn",
+		"no-dupe-keys": "warn",
+		"array-callback-return": "warn",
+		"react/prop-types": "off",
+		"react/react-in-jsx-scope": "off",
+		"react/self-closing-comp": "warn",
+		"react/no-unknown-property": "warn",
+		"react/jsx-sort-props": [
+			"warn",
+			{ "callbacksLast": true, "shorthandFirst": true, "noSortAlphabetically": false, "reservedFirst": true }
+		]
+	}
+}
